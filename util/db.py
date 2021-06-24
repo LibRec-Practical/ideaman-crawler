@@ -17,15 +17,15 @@ def ignore_insert(table_name, col_name, value_name):
     :param value_name: 值
     :return:
     """
-    # if get_id(table_name, col_name, value_name):
-    #     return
-    # else:
-    sql = "insert into `%s` (`%s`) values (\"%s\")" % (table_name, col_name, str(value_name))
-    try:
-        cur.execute(sql)
-        conn.commit()
-    except:
-        conn.rollback()
+    if get_id(table_name, col_name, value_name):
+        return
+    else:
+        sql = "insert into `%s` (`%s`) values (\"%s\")" % (table_name, col_name, str(value_name))
+        try:
+            cur.execute(sql)
+            conn.commit()
+        except:
+            conn.rollback()
 
 
 def get_id(table_name, col_name, value_name):

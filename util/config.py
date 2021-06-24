@@ -1,8 +1,8 @@
 ############# 数据库相关配置 #####################
-mysql_host = '139.155.177.218'
+mysql_host = '42.193.18.137'
 mysql_port = 3306
 mysql_user = 'root'
-mysql_pwd = ',/Qa+sk.mGB48'
+mysql_pwd = 'Delete1350$&'
 mysql_db = 'ideaman'
 
 ############# 爬虫下载文件相关配置 #####################
@@ -13,5 +13,5 @@ download_files_paths = [
 ]
 
 ############# 下载历史数据 #####################
-start_date_str = "2021-03-10"
-end_date_str = "2021-03-25"
+start_date_str = "2021-01-01"
+end_date_str = "2021-05-25"
